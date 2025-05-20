@@ -32,6 +32,10 @@ def criar_historia(protagonista, vilao, secundario, titulo):
 
     return response.text
 
+@app.route('/')
+def index():
+    return "API de criação de histórias com GenAI"
+
 @app.route('/historia', methods=['POST'])
 def criacao_historia():
 
